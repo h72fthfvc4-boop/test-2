@@ -74,30 +74,30 @@ const tutorials = [
     // === UTILISATION DES OUTILS D'ASSISTANCE À LA CONDUITE ===
     {
         id: 8,
-        title: "Optimisation de la Récolte",
-        description: "Techniques pour optimiser vos opérations de récolte avec CEMOS.",
+        title: "Régler le CRUISE PILOT",
+        description: "Apprenez à configurer et utiliser le CRUISE PILOT pour une conduite optimisée.",
         category: "Utilisation des outils d'assistance à la conduite",
-        youtubeId: "VOTRE_VIDEO_ID_9",
-        duration: "16:30",
-        thumbnail: "https://img.youtube.com/vi/VOTRE_VIDEO_ID_9/hqdefault.jpg"
+        youtubeId: "OvDbUC-OYUY",
+        duration: "00:00",
+        thumbnail: "https://img.youtube.com/vi/OvDbUC-OYUY/hqdefault.jpg"
     },
     {
         id: 9,
-        title: "Analyse des Données de Performance",
-        description: "Comment analyser et interpréter vos données de performance.",
+        title: "Optimiser les stratégies avec CEMOS AUTO PRO",
+        description: "Découvrez comment optimiser vos stratégies de récolte avec CEMOS AUTO PRO.",
         category: "Utilisation des outils d'assistance à la conduite",
-        youtubeId: "VOTRE_VIDEO_ID_10",
-        duration: "14:05",
-        thumbnail: "https://img.youtube.com/vi/VOTRE_VIDEO_ID_10/hqdefault.jpg"
+        youtubeId: "sZq71o275TM",
+        duration: "00:00",
+        thumbnail: "https://img.youtube.com/vi/sZq71o275TM/hqdefault.jpg"
     },
     {
         id: 10,
-        title: "Économies de Carburant et Consommation",
-        description: "Stratégies pour réduire votre consommation de carburant.",
+        title: "Proposition d'optimisation avec CEMOS DIALOG",
+        description: "Explorez les propositions d'optimisation automatiques de CEMOS DIALOG.",
         category: "Utilisation des outils d'assistance à la conduite",
-        youtubeId: "VOTRE_VIDEO_ID_11",
-        duration: "9:45",
-        thumbnail: "https://img.youtube.com/vi/VOTRE_VIDEO_ID_11/hqdefault.jpg"
+        youtubeId: "ahPUQ3MBD8I",
+        duration: "00:00",
+        thumbnail: "https://img.youtube.com/vi/ahPUQ3MBD8I/hqdefault.jpg"
     }
 ];
 
