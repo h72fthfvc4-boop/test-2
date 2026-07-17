@@ -261,6 +261,9 @@ body {
     border: 2px solid var(--border-light);
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .category-card::before {
@@ -284,6 +287,31 @@ body {
 
 .category-card:hover::before {
     transform: scaleX(1);
+}
+
+/* ==================== Category Icon ==================== */
+.category-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 0, 0, 0.05);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.category-card:hover .category-icon {
+    background-color: rgba(255, 0, 0, 0.1);
+    transform: scale(1.1);
+}
+
+.category-icon img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.1));
 }
 
 .category-card h3 {
@@ -639,6 +667,16 @@ body {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
+
+    .category-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .category-icon img {
+        width: 50px;
+        height: 50px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -697,5 +735,15 @@ body {
 
     .modal-content {
         width: 98%;
+    }
+
+    .category-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .category-icon img {
+        width: 45px;
+        height: 45px;
     }
 }
