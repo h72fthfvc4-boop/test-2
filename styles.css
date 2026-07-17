@@ -94,21 +94,16 @@ body {
 }
 
 .logo-text h1 {
-    font-size: 1.6rem;
-    font-weight: 700;
-    margin: 0;
-    color: var(--casa-gray);
-    letter-spacing: 0.5px;
-    line-height: 1.2;
+    display: none;
 }
 
 .logo-text .subtitle {
-    font-size: 0.85rem;
-    opacity: 0.85;
+    font-size: 0.95rem;
+    opacity: 0.9;
     color: var(--claas-red);
     font-weight: 600;
     letter-spacing: 0.3px;
-    margin-top: 0.2rem;
+    margin-top: 0;
 }
 
 /* Navigation */
@@ -581,10 +576,6 @@ body {
         height: 60px;
     }
 
-    .logo-text h1 {
-        font-size: 1.4rem;
-    }
-
     .nav ul {
         gap: 1.5rem;
     }
@@ -609,10 +600,6 @@ body {
 
     .logo img {
         height: 55px;
-    }
-
-    .logo-text h1 {
-        font-size: 1.3rem;
     }
 
     .nav {
@@ -669,10 +656,6 @@ body {
 
     .logo img {
         height: 45px;
-    }
-
-    .logo-text h1 {
-        font-size: 1.1rem;
     }
 
     .logo-text .subtitle {
