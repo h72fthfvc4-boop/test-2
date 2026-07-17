@@ -103,17 +103,17 @@ function displayTutorials(filteredTutorials = tutorials) {
         const tutorialCard = createTutorialCard(tutorial);
         tutorielsGrid.appendChild(tutorialCard);
     });
+    
+    // Ajouter les event listeners aux cartes après les avoir créées
+    setupTutorialCardListeners();
 }
 
 // ==================== Création d'une Carte Tutoriel ====================
 function createTutorialCard(tutorial) {
     const card = document.createElement('div');
     card.className = 'tutorial-card';
-    
-    // Click sur la carte pour ouvrir le modal
-    card.addEventListener('click', () => {
-        openVideoModal(tutorial.youtubeId, tutorial.title);
-    });
+    card.dataset.youtubeId = tutorial.youtubeId;
+    card.dataset.title = tutorial.title;
     
     card.innerHTML = `
         <div class="tutorial-thumbnail">
@@ -135,16 +135,39 @@ function createTutorialCard(tutorial) {
     return card;
 }
 
+// ==================== Ajouter les Event Listeners aux Cartes ====================
+function setupTutorialCardListeners() {
+    const tutorialCards = document.querySelectorAll('.tutorial-card');
+    tutorialCards.forEach(card => {
+        card.addEventListener('click', function() {
+            const youtubeId = this.dataset.youtubeId;
+            const title = this.dataset.title;
+            openVideoModal(youtubeId, title);
+        });
+    });
+}
+
 // ==================== Filtrage par Catégorie ====================
 function filterByCategory(category) {
     const filtered = tutorials.filter(t => t.category === category);
     displayTutorials(filtered);
     
-    // Afficher la catégorie sélectionnée
-    const categoryTitle = document.querySelector('.section-title');
-    if (categoryTitle) {
-        categoryTitle.textContent = category;
+    // Afficher la section tutoriels
+    const tutorielsSection = document.getElementById('tutoriels');
+    if (tutorielsSection) {
+        tutorielsSection.style.display = 'block';
     }
+    
+    // Afficher la catégorie sélectionnée dans tous les section-title
+    const sectionTitles = document.querySelectorAll('.section-title');
+    sectionTitles.forEach(title => {
+        title.textContent = category;
+    });
+    
+    // Scroll vers la section tutoriels
+    setTimeout(() => {
+        tutorielsSection.scrollIntoView({ behavior: 'smooth' });
+    }, 100);
 }
 
 // ==================== Récupérer les Catégories Uniques ====================
