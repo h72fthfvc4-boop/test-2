@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#f5f5f5"/>
+  
+  <!-- Sensor/Radar - Utilisation des outils d'assistance -->
+  <g transform="translate(100, 100)">
+    <!-- Radar dish -->
+    <path d="M -25 20 L 0 -30 L 25 20 Q 25 35 0 40 Q -25 35 -25 20" fill="none" stroke="#000" stroke-width="2"/>
+    
+    <!-- Sensor lines -->
+    <line x1="0" y1="-30" x2="0" y2="-50" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Radar waves -->
+    <path d="M -15 5 Q -25 0 -30 10" fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M -10 -5 Q -25 -15 -35 -5" fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M 15 5 Q 25 0 30 10" fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M 10 -5 Q 25 -15 35 -5" fill="none" stroke="#000" stroke-width="1.5" stroke-linecap="round"/>
+    
+    <!-- Center connector -->
+    <circle cx="0" cy="20" r="3" fill="#000"/>
+    
+    <!-- Signal indicator dots -->
+    <circle cx="-8" cy="-20" r="2" fill="#000"/>
+    <circle cx="0" cy="-25" r="2" fill="#000"/>
+    <circle cx="8" cy="-20" r="2" fill="#000"/>
+  </g>
+</svg>
