@@ -49,12 +49,12 @@ body {
     padding: 0 20px;
 }
 
-/* ==================== Header - Gris Clair ==================== */
+/* ==================== Header - Blanc ==================== */
 .header {
-    background: linear-gradient(135deg, #E8E8E8 0%, #D0D0D0 100%);
+    background: linear-gradient(135deg, #FFFFFF 0%, #FFFFFF 100%);
     color: var(--casa-gray);
     padding: 1rem 0;
-    box-shadow: var(--shadow-dark);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -79,7 +79,7 @@ body {
     height: 70px;
     width: auto;
     object-fit: contain;
-    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.15));
     transition: transform 0.3s ease;
 }
 
