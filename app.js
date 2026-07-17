@@ -2,10 +2,10 @@
 
 // Mappage des catégories avec leurs icônes CLAAS
 const categoryIcons = {
-    "Réglages de la coupe": "icons/harvester.svg",
-    "Utilisation des outils d'assistance à la conduite": "icons/sensor.svg",
-    "Chargement produits, gestion des favoris": "icons/wheat.svg",
-    "Calibration des capteurs": "icons/screwdriver.svg"
+    "Réglages de la coupe": "icons/2025-07-15-lexion-article-1-pic_1.png",
+    "Utilisation des outils d'assistance à la conduite": "icons/445497_28.png",
+    "Chargement produits, gestion des favoris": "icons/epi-de-ble.jpg",
+    "Calibration des capteurs": "icons/20609299-tournevis-logo-ou-icone-dans-vecteur-gratuit-vectoriel_1.png"
 };
 
 document.addEventListener('DOMContentLoaded', function() {
