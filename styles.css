@@ -1,8 +1,8 @@
 /* ==================== Variables CSS - Charte CLAAS + CASA ==================== */
 :root {
-    /* CLAAS - Rouge vif */
-    --claas-red: #FF0000;
-    --claas-red-dark: #CC0000;
+    /* CLAAS - Vert clair (couleur officielle CLAAS) */
+    --claas-green: #7FBB00;
+    --claas-green-dark: #5A8A00;
     
     /* CASA SERVICE MACHINE - Gris professionnel */
     --casa-gray: #2C2C2C;
@@ -21,7 +21,7 @@
     
     /* Ombres */
     --shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
-    --shadow-hover: 0 8px 20px rgba(255, 0, 0, 0.15);
+    --shadow-hover: 0 8px 20px rgba(127, 187, 0, 0.15);
     --shadow-dark: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -58,7 +58,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
-    border-bottom: 5px solid var(--claas-red);
+    border-bottom: 5px solid var(--claas-green);
 }
 
 .header .container {
@@ -100,7 +100,7 @@ body {
 .logo-text .subtitle {
     font-size: 0.95rem;
     opacity: 0.9;
-    color: var(--claas-red);
+    color: var(--claas-green);
     font-weight: 600;
     letter-spacing: 0.3px;
     margin-top: 0;
@@ -136,12 +136,12 @@ body {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: var(--claas-red);
+    background-color: var(--claas-green);
     transition: width 0.3s ease;
 }
 
 .nav a:hover {
-    color: var(--claas-red);
+    color: var(--claas-green);
 }
 
 .nav a:hover::after {
@@ -223,7 +223,7 @@ body {
 }
 
 .prev:hover, .next:hover {
-    background-color: rgba(255, 0, 0, 0.7);
+    background-color: rgba(127, 187, 0, 0.7);
 }
 
 /* Dots Container */
@@ -323,7 +323,7 @@ body {
     transform: translateX(-50%);
     width: 80px;
     height: 3px;
-    background: linear-gradient(90deg, var(--claas-red), var(--accent-yellow-green));
+    background: linear-gradient(90deg, var(--claas-green), var(--accent-yellow-green));
     border-radius: 2px;
 }
 
@@ -362,7 +362,7 @@ body {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, var(--claas-red), var(--accent-yellow-green));
+    background: linear-gradient(90deg, var(--claas-green), var(--accent-yellow-green));
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.3s ease;
@@ -371,7 +371,7 @@ body {
 .category-card:hover {
     transform: translateY(-8px);
     box-shadow: var(--shadow-hover);
-    border-color: var(--claas-red);
+    border-color: var(--claas-green);
 }
 
 .category-card:hover::before {
@@ -388,13 +388,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255, 0, 0, 0.05);
+    background-color: rgba(127, 187, 0, 0.05);
     transition: all 0.3s ease;
     z-index: 1;
 }
 
 .category-card:hover .category-icon {
-    background-color: rgba(255, 0, 0, 0.1);
+    background-color: rgba(127, 187, 0, 0.1);
     transform: scale(1.05);
 }
 
@@ -427,18 +427,18 @@ body {
 
 .category-count {
     display: inline-block;
-    background: linear-gradient(135deg, var(--claas-red), var(--claas-red-dark));
+    background: linear-gradient(135deg, var(--claas-green), var(--claas-green-dark));
     color: var(--white);
     padding: 4px 12px;
     border-radius: 20px;
     font-size: 0.85rem;
     font-weight: 600;
     margin-top: 1rem;
-    box-shadow: 0 2px 8px rgba(255, 0, 0, 0.2);
+    box-shadow: 0 2px 8px rgba(127, 187, 0, 0.2);
     position: relative;
     z-index: 2;
     background: rgba(255, 255, 255, 0.95);
-    color: var(--claas-red);
+    color: var(--claas-green);
 }
 
 /* ==================== Tutoriels Section ==================== */
@@ -466,7 +466,7 @@ body {
 .tutorial-card:hover {
     transform: translateY(-12px);
     box-shadow: var(--shadow-hover);
-    border-left-color: var(--claas-red);
+    border-left-color: var(--claas-green);
 }
 
 .tutorial-thumbnail {
@@ -493,7 +493,7 @@ body {
     transform: translate(-50%, -50%);
     width: 70px;
     height: 70px;
-    background: linear-gradient(135deg, var(--claas-red), var(--claas-red-dark));
+    background: linear-gradient(135deg, var(--claas-green), var(--claas-green-dark));
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -505,13 +505,13 @@ body {
     border: none;
     cursor: pointer;
     color: var(--white);
-    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+    box-shadow: 0 4px 15px rgba(127, 187, 0, 0.3);
 }
 
 .tutorial-card:hover .play-button {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1.15);
-    box-shadow: 0 8px 25px rgba(255, 0, 0, 0.4);
+    box-shadow: 0 8px 25px rgba(127, 187, 0, 0.4);
 }
 
 .tutorial-content {
@@ -612,8 +612,8 @@ body {
 }
 
 .close-modal:hover {
-    background-color: rgba(255, 0, 0, 0.2);
-    color: var(--claas-red);
+    background-color: rgba(127, 187, 0, 0.2);
+    color: var(--claas-green);
 }
 
 @media (max-width: 768px) {
@@ -633,7 +633,7 @@ body {
     color: var(--white);
     text-align: center;
     padding: 3rem 0;
-    border-top: 4px solid var(--claas-red);
+    border-top: 4px solid var(--claas-green);
 }
 
 .footer p {
