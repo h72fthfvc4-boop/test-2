@@ -116,9 +116,14 @@ body {
 .nav ul {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 1.5rem;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+}
+
+.nav li {
+    display: flex;
+    align-items: center;
 }
 
 .nav a {
@@ -130,6 +135,7 @@ body {
     position: relative;
     padding: 0.5rem 0;
     text-align: center;
+    display: inline-block;
 }
 
 .nav a::after {
@@ -151,8 +157,9 @@ body {
     width: 100%;
 }
 
-/* Bouton Tutoriels tracteurs */
-.btn-tracteurs {
+/* Boutons Navigation */
+.btn-tracteurs,
+.btn-cemis {
     display: inline-block;
     background: linear-gradient(135deg, var(--claas-green), var(--claas-green-dark));
     color: var(--white) !important;
@@ -166,46 +173,27 @@ body {
     transition: all 0.3s ease;
     text-align: center;
     white-space: nowrap;
+    border: none;
 }
 
-.btn-tracteurs::after {
+.btn-tracteurs::after,
+.btn-cemis::after {
     display: none;
 }
 
-.btn-tracteurs:hover {
+.btn-tracteurs:hover,
+.btn-cemis:hover {
     background: linear-gradient(135deg, var(--claas-green-dark), var(--claas-green));
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(127, 187, 0, 0.4);
     color: var(--white) !important;
 }
 
-/* Bouton CEMIS 1200 */
 .btn-cemis {
-    display: inline-block;
-    background: linear-gradient(135deg, var(--accent-yellow-green), var(--accent-yellow-green-dark));
-    color: var(--casa-gray) !important;
-    padding: 8px 16px;
-    border-radius: 6px;
-    font-weight: 600;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    box-shadow: 0 4px 12px rgba(204, 255, 0, 0.3);
-    transition: all 0.3s ease;
-    text-align: center;
-    white-space: nowrap;
     border: 2px solid var(--casa-gray);
 }
 
-.btn-cemis::after {
-    display: none;
-}
-
 .btn-cemis:hover {
-    background: linear-gradient(135deg, var(--accent-yellow-green-dark), var(--accent-yellow-green));
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(204, 255, 0, 0.4);
-    color: var(--casa-gray) !important;
     border-color: var(--claas-green);
 }
 
@@ -769,7 +757,7 @@ body {
     }
 
     .nav ul {
-        gap: 1.5rem;
+        gap: 1rem;
     }
 
     .hero {
@@ -791,15 +779,18 @@ body {
     }
 
     .header .container {
-        flex-direction: column;
+        flex-direction: row;
         gap: 1rem;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     .logo {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: row;
+        text-align: left;
         gap: 0.8rem;
+        flex: 1;
+        min-width: 200px;
     }
 
     .logo img {
@@ -812,7 +803,7 @@ body {
     }
 
     .nav ul {
-        gap: 1.2rem;
+        gap: 0.8rem;
         font-size: 0.9rem;
         flex-wrap: wrap;
         justify-content: center;
@@ -883,14 +874,14 @@ body {
     }
 
     .nav ul {
-        gap: 0.8rem;
+        gap: 0.5rem;
         font-size: 0.8rem;
     }
 
     .btn-tracteurs,
     .btn-cemis {
-        padding: 5px 10px;
-        font-size: 0.75rem;
+        padding: 5px 8px;
+        font-size: 0.7rem;
     }
 
     .hero {
